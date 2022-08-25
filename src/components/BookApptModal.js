@@ -264,17 +264,34 @@ function BookAppointmentModal(props) {
                       Phone #
                     </span>
                     <input
-                      {...register("tel", { required: true })}
+                      {...register("tel", {
+                        required: true,
+                        pattern:
+                          /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/,
+                      })}
                       placeholder="702-555-5555"
                       className="shadow border rounded py-2 px-3 mt-1 block focus:ring ring-yellow-500"
                       type="tel"
                       autoComplete="tel"
                     />
+                    {errors.email && (
+                      <span className="text-red-500">
+                        - A telephone number is required
+                      </span>
+                    )}
+                    {errors.tel?.type === "pattern" && (
+                      <span className="text-red-500">
+                        - A valid telephone number is required
+                      </span>
+                    )}
                   </label>
                   <label className="flex flex-col block mb-5">
                     <span className="text-complimentary-color-wife">Notes</span>
                     <textarea
-                      {...register("comment", { required: false })}
+                      {...register("comment", {
+                        required: false,
+                        maxLength: 150,
+                      })}
                       rows={7}
                       className="shadow border rounded py-2 px-3 mt-1 block focus:ring focus:ring-yellow-500"
                     />
