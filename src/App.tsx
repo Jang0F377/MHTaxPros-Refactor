@@ -5,8 +5,7 @@ import Contact from "./components/Contact";
 import RecentNewsCards from "./components/RecentNewsCards";
 import DatesToRemember from "./components/DatesToRemember";
 import Calendar from "./components/CalendarComponent";
-import { useState } from "react";
-import { useAppDispatch, useAppSelector } from "./hooks/hooks";
+import { useAppSelector } from "./hooks/hooks";
 import { getFailedState, getSuccessState } from "./slices/globalStateSlice";
 import SuccessfulAlert from "./components/alerts/SuccessfulAlert";
 import FailedAlert from "./components/alerts/FailedAlert";
@@ -17,7 +16,7 @@ function App() {
 
   return (
     <div className="flex flex-col ">
-      <Parallax pages={4.7} style={{ top: "0", left: "0" }}>
+      <Parallax pages={4.8} style={{ top: "0", left: "0" }}>
         <ParallaxLayer
           offset={0}
           factor={1}
@@ -52,7 +51,7 @@ function App() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          offset={2.9}
+          offset={3}
           factor={3}
           speed={0.75}
           style={{
