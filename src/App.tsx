@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="flex flex-col ">
-      <Parallax pages={4.8} style={{ top: "0", left: "0" }}>
+      <Parallax pages={5.3} style={{ top: "0", left: "0" }}>
         <ParallaxLayer
           offset={0}
           factor={1}
@@ -33,8 +33,8 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer
           offset={1}
-          factor={2.1}
-          speed={1}
+          factor={2.5}
+          speed={0.7}
           style={{
             display: "flex",
             justifyContent: "center",
@@ -52,7 +52,7 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer
           offset={3}
-          factor={3}
+          factor={3.1}
           speed={0.75}
           style={{
             display: "flex",
