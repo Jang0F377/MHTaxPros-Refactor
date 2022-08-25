@@ -9,29 +9,11 @@ import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "./hooks/hooks";
 import { getFailedState, getSuccessState } from "./slices/globalStateSlice";
 import SuccessfulAlert from "./components/alerts/SuccessfulAlert";
+import FailedAlert from "./components/alerts/FailedAlert";
 
 function App() {
-  const dispatch = useAppDispatch();
   const success = useAppSelector(getSuccessState);
   const failed = useAppSelector(getFailedState);
-
-  // const handleShow = (x: number) => {
-  //   switch (x) {
-  //     case 1: {
-  //       dispatch(setSuccess());
-  //       sleep(2000).then(() => dispatch(resetState()));
-  //       break;
-  //     }
-  //     case 2: {
-  //       dispatch(setFailed());
-  //       sleep(2000).then(() => dispatch(resetState()));
-  //       break;
-  //     }
-  //     default: {
-  //       break;
-  //     }
-  //   }
-  // };
 
   return (
     <div className="flex flex-col ">
@@ -90,6 +72,7 @@ function App() {
         </ParallaxLayer>
       </Parallax>
       <SuccessfulAlert open={success} />
+      <FailedAlert open={failed} />
     </div>
   );
 }

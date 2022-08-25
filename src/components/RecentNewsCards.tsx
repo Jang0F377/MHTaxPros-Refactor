@@ -44,7 +44,7 @@ function RecentNewsCards() {
 
                     <a
                       href={x?.href}
-                      className="my-2 mx-16 py-1 flex items-center justify-center  border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      className="my-2 mx-16 py-1 flex items-center justify-center  border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-complimentary-color-husband hover:bg-transparent hover:text-black hover:ring-1 hover:ring-complimentary-color-husband"
                     >
                       Learn More
                     </a>

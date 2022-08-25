@@ -30,7 +30,7 @@ const openingsEndpoint2 = `${baseURL}openings?services=${serviceArr.inPerson}${e
 const myHeaders = new Headers();
 myHeaders.append(
   "Authorization",
-  `Bearer ${process.env.REACT_APP_FULLSLATE_PUBLIC_API}`
+  `Bearer OnXUb9Y3WEfVqLpHhvtITVVWGVj8AvkoJ4MlEOXM853vDvAP4g`
 );
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append("Accept", "application/json");
