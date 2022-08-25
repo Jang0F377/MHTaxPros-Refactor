@@ -1,7 +1,7 @@
 const CallToAction = () => {
   return (
     <div className=" ">
-      <div className="relative mx-auto max-w-md px-4  sm:px-6 lg:max-w-7xl  lg:px-8 ">
+      <div className="relative mx-auto max-w-md px-4 md:max-w-xl  sm:px-6 lg:max-w-7xl  lg:px-8 ">
         <div className="relative rounded-2xl px-3 py-5 bg-money-green-complimentary overflow-hidden shadow-xl sm:px-6 sm:py-10 ">
           <div
             aria-hidden="true"

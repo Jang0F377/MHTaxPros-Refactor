@@ -4,6 +4,7 @@ import {
   PhoneIcon,
   OfficeBuildingIcon,
 } from "@heroicons/react/outline";
+import { EmojiHappyIcon } from "@heroicons/react/solid";
 
 function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -189,6 +190,10 @@ function Contact() {
               <h3 className="text-lg font-medium text-white">
                 Send me a message
               </h3>
+              <p className="text-[0.75rem] text-white flex flex-row items-center">
+                I'd prefer if you directly emailed me
+                <EmojiHappyIcon className="flex h-6 w-5 ml-1  text-complimentary-color-wife" />
+              </p>
               <form className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                 <div>
                   <label

@@ -11,7 +11,7 @@ function DatesToRemember() {
   }
 
   return (
-    <div className="bg-money-green-complimentary opacity-90 rounded-lg mx-1 sm:max-w-xl xl:max-w-7xl sm:mx-auto py-4 px-4  sm:px-6  ">
+    <div className="bg-money-green-complimentary opacity-90 rounded-lg mx-1 sm:max-w-xl lg:max-w-3xl xl:max-w-7xl sm:mx-auto py-4 px-4 sm:px-6  ">
       <h1 className="text-center font-bold text-2xl ">Dates to Remember</h1>
       <dl className="border items-center my-3 divide-y divide-gray-200">
         {dates.map((day) => (

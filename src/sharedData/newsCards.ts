@@ -3,18 +3,17 @@ import { NewsCards } from "../../typings";
 export const newsCards: Array<NewsCards> = [
   {
     id: 0,
-    title: "Child Tax Credit",
-    image: "/woman-working-daughter-370x200.jpg",
-    description:
-      "Get answers to questions about the changes to the Child Tax Credit in 2021",
-    href: "https://www.irs.gov/credits-deductions/2021-child-tax-credit-and-advance-child-tax-credit-payments-frequently-asked-questions",
+    title: "Still need to file?",
+    image: "/still-need-to-file-image-homepage-250.webp",
+    description: "No need to wait until the Oct.17 extension deadline",
+    href: "https://www.irs.gov/newsroom/dont-wait-to-file-irs-encourages-taxpayers-with-october-filing-extensions-and-others-who-still-need-to-file",
   },
   {
     id: 1,
-    title: "Unemployment Compensation",
-    image: "/free-file-homepage.jpg",
-    description: "How the 2020 tax exclusion works",
-    href: "https://www.irs.gov/newsroom/tax-treatment-of-unemployment-compensation",
+    title: "Clean vehicle tax credits",
+    image: "/ev-charging.webp",
+    description: "New tax law changes the eligibility rules",
+    href: "https://www.irs.gov/businesses/plug-in-electric-vehicle-credit-irc-30-and-irc-30d",
   },
   {
     id: 2,
@@ -25,10 +24,9 @@ export const newsCards: Array<NewsCards> = [
   },
   {
     id: 3,
-    title: "Recovery Rebate Credit",
-    image: "/report_Isometric.svg",
-    description:
-      "If you didn't get the full Economic Impact Payments, you may qualify for a rebate.",
-    href: "https://www.irs.gov/newsroom/recovery-rebate-credit",
+    title: "Special filing season alerts",
+    image: "/homepage-news-special-filing-250-208_0.webp",
+    description: "Tax season alerts and planning ahead for 2023",
+    href: "https://www.irs.gov/newsroom/help-for-taxpayers-and-tax-professionals",
   },
 ];
